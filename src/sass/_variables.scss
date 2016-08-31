@@ -1,14 +1,30 @@
 @charset "UTF-8";
 
-// @font-face {
-//     font-family: 'font';
-//     src: url('../fonts/fonr.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'GothaPro';
+    src: url('../fonts/GothaProReg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 
-$mainFontFamily: Helvetica, sans-serif;
+@font-face {
+    font-family: 'GothaPro';
+    src: url('../fonts/GothaProBol.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lubalingraphitcturner';
+    src: url('../fonts/lubalingraphitcturner-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$got: GothaPro;
+$luba: lubalingraphitcturner;
+$mainFontFamily: $got, Helvetica, sans-serif;
 
 //
 //colors

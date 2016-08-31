@@ -3,14 +3,507 @@
  * Layout
  * ========================================================================== */
 
-.body-container{
+.container{
 	overflow: hidden;
 	position: relative;
+
+	&__section{
+		
+	}
 }
 
 /* ==========================================================================
- * main
+ * section
+ * ========================================================================== */
+
+.section{
+	padding: 40px 0 40px;
+
+	&__wrap{
+		@include clearfix;
+		width: 1160px;
+		margin: auto;
+	}
+
+	&__title{
+		font-family: $luba;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0 0 40px;
+		text-align: center;
+	}
+
+	&__text{
+		margin: 0 0 30px;
+	}
+}
+
+/* ==========================================================================
+ * home
+ * ========================================================================== */
+
+.home{
+	background: $blue;
+	padding: 20px 0 60px;
+	position: relative;
+	color: #fff;
+
+	&--kids{
+		background: $blue url(../images/bg/home-grass.png) 50% 100% no-repeat;
+		background-size: 100% auto;
+	}
+
+	&--adults{
+		&:before{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 70px 900px;
+			border-color: transparent transparent #8bbe53 transparent;
+		}
+	}
+
+
+	&__clouds{
+		position: absolute;
+		@include sprite($clouds);
+		top: -25px;
+		left: 50%;
+		margin-left: -850px;
+	}
+
+	&__pers{
+		position: absolute;
+
+		&--boy{
+			bottom: 13px;
+			left: 50%;
+			margin: 0 0 0 200px;
+		}
+	}
+
+	&__logos{
+		text-align: center;
+		margin: 0 0 120px;
+	}
+
+	&__codex{
+		position: relative;
+		color: $yellow;
+	}
+}
+ 
+.home-logos{
+	display: inline-block;
+	@include sprite($logos);
+}
+
+
+
+/* ==========================================================================
+ * codex
+ * ========================================================================== */
+
+.codex{
+	padding: 130px 0 50px;
+	position: relative;
+
+	&:before,
+	&:after{
+		content: '';
+		position: absolute;
+		left: 50%;
+	}
+
+	&:before{
+		top: 0;
+		margin: 0 0 0 260px;
+		@include sprite($cloud-white);
+	}
+
+	&:after{
+		top: 500px;
+		margin: 0 0 0 -870px;
+		@include sprite($cloud-white-small);
+	}
+
+	&__about{
+		position: relative;
+	}
+}
+
+/* ==========================================================================
+ * about-codex
  * ========================================================================== */
 
 
- 
+.about-codex{
+
+	&__title{
+		font-size: 72px;
+		text-align: left;
+	}
+
+	&__list{
+		font-size: 20px;
+		line-height: 1.5;
+		width: 700px;
+		text-transform: uppercase;
+		margin: 0 0 50px;
+	}
+
+	&__item{
+		margin: 0 0 22px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&__download{
+		text-align: center;
+	}
+
+	&__button-placeholder{
+		width: 340px;
+		margin: 0 15px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+
+/* ==========================================================================
+ * about
+ * ========================================================================== */
+
+
+.about{
+	padding: 40px 0 60px;
+
+	&:before{
+		content: '';
+		display: block;
+		margin: 0 auto 20px;
+		@include sprite($snail);
+	}
+
+	&__bulling{
+		margin: 0 0 100px;
+	}
+
+	&__list{
+		margin: 0 0 120px;
+		text-align: center;
+	}
+
+	&__item{
+		display: inline-block;
+		min-width: 300px;
+
+		vertical-align: top;
+		margin: 0 30px 30px;
+	}
+
+	&__video{
+		width: 710px;
+		margin: 0 auto 40px;
+		position: relative;
+
+		&:after{
+			content: '';
+			display: block;
+			@include sprite($pinguin);
+			position: absolute;
+			bottom: -10px;
+			right: -86px;
+		}
+	}
+}
+
+.about-bulling{
+
+	&__title{
+		
+	}
+
+	&__text{
+		text-align: center;	
+		padding: 0 50px;	
+		margin: 0 0 30px;
+	}
+
+	&__button-placeholder{
+		text-align: center;
+	}
+
+}
+
+.about-item{
+	text-align: center;
+
+	&:hover{
+		.about-item__text{
+			border-color: transparent;
+		}
+	}
+
+	&__href{
+		display: block;
+	}
+
+	&__image-placeholder{
+		margin: 0 auto 20px;
+		height: 290px;
+		line-height: 290px;
+		display: block;
+	}
+
+	&__image{
+		vertical-align: bottom;
+	}
+
+	&__text-placeholder{
+		display: block;
+		width: 230px;
+		margin: 0 auto;
+	}
+
+	&__text{
+		font-size: 20px;
+		line-height: 1.3;
+		border-bottom: 2px solid #bfbfbf; 
+		transition: all .2s;
+	}
+}
+
+
+/* ==========================================================================
+ * articles
+ * ========================================================================== */
+
+.articles{
+
+	padding: 50px 0 100px;
+
+	&__title{
+		margin: 0 0 50px;
+	}
+
+	&__list{
+		margin: 0 0 80px;
+		text-align: center;
+	}
+
+	&__item{
+		display: inline-block;
+
+		vertical-align: top;
+		width: 300px;
+		margin: 0 30px 30px;
+	}
+
+	&__text{
+		margin: 0 0 50px;
+		padding: 0 50px;
+		text-align: center;
+	}
+
+	&__button-placeholder{
+		width: 470px;
+		margin: auto;
+		position: relative;
+
+		&:before{
+			content: '';
+			@include sprite($snail);
+			position: absolute;
+			bottom: 0;
+			left: 100%; 
+		}
+	}
+}
+.articles-item{
+	text-align: center;
+
+	&:hover{
+		.about-item__text{
+			border-color: transparent;
+		}
+	}
+
+	&__href{
+		display: block;
+	}
+
+	&__image-placeholder{
+		margin: 0 auto 20px;
+		display: block;
+		height: 170px;
+		width: 222px;
+		overflow: hidden;
+		border: 3px solid #fff;
+		box-shadow: 0 5px 20px rgba(42,80,0,.5);
+	}
+
+	&__image{
+		
+	}
+
+	&__text-placeholder{
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__text{
+		font-size: 20px;
+		line-height: 1.3;
+		border-bottom: 2px solid #bfbfbf; 
+		transition: all .2s;
+		font-weight: 400;
+	}
+}
+
+/* ==========================================================================
+ * help
+ * ========================================================================== */
+
+
+.help{
+	padding: 50px 0 50px;
+
+	text-align: center;
+	
+	&__text{
+		font-size: 26px;
+		font-weight: 400;
+		margin: 0 0 30px;
+	}
+
+	&__phone{
+		font-size: 54px;
+		font-weight: 700;
+		margin: 0 0 30px;
+	}
+
+	&__button-placeholder{
+		
+	}
+}
+
+/* ==========================================================================
+ * video-player
+ * ========================================================================== */
+
+.video-player{
+
+	&__media-container{
+		height: 0;
+		padding: 0 0 49.8%;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		overlfow: hidden;
+	}
+
+	&__media{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+
+	&__frame{
+		background: #000;
+		margin: auto;
+		border: 0;
+		display: none;
+		width: 100%;
+		height: 100%;
+
+		&--visible{
+			display: block;
+		}
+	}
+
+	&__href{
+		display: block;
+
+		&:before{
+			content: '';
+			@include sprite($play);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&--invisible{
+			display: none;
+		}
+	}
+
+	&__thumb{
+		vertical-align: top;
+		display: block;
+		width: 100%;
+		height: auto;
+	}	
+}
+
+
+/* ==========================================================================
+ * competition
+ * ========================================================================== */
+
+.competition{
+	background: $blue;
+	padding: 20px 0 20px;
+
+	&__wrap{
+		width: 1000px;
+	}
+
+	&__image-placeholder{
+		height: 350px;
+		line-height: 350px;
+		width: 280px;
+		text-align: center;
+		
+		&--start{
+			float: left;
+		}
+
+		&--end{
+			float: right;
+		}
+	}
+
+	&__image{
+		vertical-align: bottom;
+	}
+
+	&__content{
+		margin: 80px auto;
+		width: 360px;
+		text-align: center;
+	}
+
+	&__title{
+		color: $yellow;
+		font-size: 54px;
+		margin: 0 0 30px;
+	}
+
+	&__subtitle{
+		font-size: 24px;
+		display: block;
+	}
+}

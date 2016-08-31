@@ -27,22 +27,43 @@
 	}
 
 
-	&--color{
-		background: #000;
+	&--dark-blue{
+		background: #2451bf;
 		color: #fff;
 		&:hover{
-			background: lighten(#000, 5%);
+			background: lighten(#2451bf, 5%);
 		}
 		&:active{
-			background: darken(#000, 5%);
+			background: darken(#2451bf, 5%);
 		}
 	}
 
+
+	&--yellow{
+		background: $yellow;
+		color: #000;
+		&:hover{
+			background: lighten($yellow, 5%);
+		}
+		&:active{
+			background: darken($yellow, 5%);
+		}
+	}
+
+	&--s{
+		border-radius: 26px;
+		font-weight: 400;
+		font-size: 21px;
+		padding: 13px 35px 13px;
+		text-transform: uppercase;
+	}
+
 	&--m{
-		border-radius: 8px;
-		font-weight: 700;
-		font-size: 12px;
-		padding: 8px 20px 8px;
+		border-radius: 31px;
+		font-weight: 400;
+		font-size: 26px;
+		padding: 18px 50px 18px;
+		text-transform: uppercase;
 	}
 
 	&--l{
