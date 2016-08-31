@@ -1,0 +1,74 @@
+<section class="container__section section competition" id="competition">
+	
+	<div class="section__wrap competition__wrap">
+
+		@@if (role === "girls"){
+
+		<div class="competition__image-placeholder competition__image-placeholder--start">
+			
+			<img src="assets/images/pers/footer-cat.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		<div class="competition__image-placeholder competition__image-placeholder--end">
+			
+			<img src="assets/images/pers/footer-girl.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		}
+
+
+		@@if (role === "boys"){
+		
+		<div class="competition__image-placeholder competition__image-placeholder--start">
+			
+			<img src="assets/images/pers/footer-jake.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		<div class="competition__image-placeholder competition__image-placeholder--end">
+			
+			<img src="assets/images/pers/footer-finn.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		}
+
+
+		@@if (role !== "boys" && role !== "girls"){
+		
+		<div class="competition__image-placeholder competition__image-placeholder--start">
+			
+			<img src="assets/images/pers/footer-jake-2.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		<div class="competition__image-placeholder competition__image-placeholder--end">
+			
+			<img src="assets/images/pers/footer-finn-2.png" alt="" class="competition__image">
+
+		</div><!-- /.competition__image-placeholder -->
+
+		}
+
+
+
+		<div class="competition__content">
+
+			<h2 class="section__title competition__title">
+				Конкурс
+				<span class="competition__subtitle">для настоящих друзей</span>
+			</h2>
+
+			<div class="competition__button-placeholder">
+				
+				<a href="http://cn.druzhba.ru/" class="competition__button button button--dark-blue button--s" target="_blank">Участвовать</a>
+
+			</div><!-- /.about__button-placeholder -->
+
+		</div><!-- /.competition__content -->
+	
+	</div> <!-- /.competition__wrap -->
+
+</section> <!-- /.competition -->

@@ -43,12 +43,6 @@ span{
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=); 
 }
 
-p{
-	margin: 0 0 1em;
-	&:last-child{
-		margin: 0;
-	}
-}
 
 strong{
 	font-weight: 700;
@@ -68,4 +62,18 @@ sup{
 	line-height: (30/20);
 	font-family: $got;
 	font-weight: 700;
+
+	h3{
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0 0 1em;
+	}
+
+	p{
+		margin: 0 0 1em;
+		&:last-child{
+			margin: 0;
+		}
+	}
+
 }

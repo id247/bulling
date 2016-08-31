@@ -68,6 +68,27 @@
 		}
 	}
 
+	&--articles{
+		&:before,
+		&:after{
+			position: absolute;
+			left: 50%;
+		}
+
+		&:before{
+			bottom: -50px;
+			margin: 0 0 0 -800px;
+			content: url(../images/pers/about-cat.png);
+		}
+
+		&:after{
+			bottom: -150px;
+			margin: 0 0 0 500px;
+			content: url(../images/pers/about-jake.png);
+		}
+	}
+
+
 
 	&__clouds{
 		position: absolute;
@@ -283,10 +304,10 @@
 
 
 /* ==========================================================================
- * articles
+ * articles-links
  * ========================================================================== */
 
-.articles{
+.articles-links{
 
 	padding: 50px 0 100px;
 
@@ -295,7 +316,7 @@
 	}
 
 	&__list{
-		margin: 0 0 80px;
+		margin: 0 0 30px;
 		text-align: center;
 	}
 
@@ -305,6 +326,16 @@
 		vertical-align: top;
 		width: 300px;
 		margin: 0 30px 30px;
+	}
+
+	&__all-placeholder{
+		text-align: center;
+		margin: 0 0 60px;
+	}
+
+	&__all{
+		font-weight: 400;
+		font-size: 18px;
 	}
 
 	&__text{
@@ -327,7 +358,9 @@
 		}
 	}
 }
-.articles-item{
+
+
+.articles-links-item{
 	text-align: center;
 
 	&:hover{
@@ -505,5 +538,59 @@
 	&__subtitle{
 		font-size: 24px;
 		display: block;
+	}
+}
+
+/* ==========================================================================
+ * articles-headings
+ * ========================================================================== */
+
+.articles-headings{
+
+	&__list{
+		
+	}
+
+	&__item{
+		margin: 0 0 10px;
+		list-style-type: decimal;
+	}
+
+	&__href{
+		font-size: 20px;
+	}
+}
+
+/* ==========================================================================
+ * article-footer
+ * ========================================================================== */
+
+.article-footer{
+	padding: 30px 0;	
+	margin: 0;
+	position: relative;
+	height: 200px;
+
+	&__image-placeholder{
+		position: absolute;
+		left: 50%;
+		
+		&--start{
+			margin: 0 0 0 -800px;
+			bottom: 0px;
+		}
+
+		&--end{
+			margin: 0 0 0 550px;
+			bottom: 80px;
+		}
+	}
+
+	&__image{
+	}
+
+
+	&__button-placeholder{
+		text-align: center;
 	}
 }
