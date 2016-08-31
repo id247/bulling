@@ -1,21 +1,19 @@
+@@if (role === "boys"){
 
-<section class="container__section section home home--articles" id="home">
-	
-	<div class="section__wrap home__wrap">
+@@include('../common/article-header.html', {
+	"role": "boys"
+})
 
-		<div class="home__clouds">
-			
-		</div><!-- /.home__logos -->
+}
 
-		<div class="home__logos">
+@@if (role === "girls"){
 
-			<span class="home-logos"></span>
-			
-		</div><!-- /.home__logos -->
+@@include('../common/article-header.html', {
+	"role": "girls"
+})
 
-	</div> <!-- /.home__wrap -->
+}
 
-</section> <!-- /.home -->
 
 
 <section class="container__section section articles-headings" id="articles-headings">
@@ -184,30 +182,20 @@
 </section> <!-- /.article -->
 
 
-<section class="container__section section article-footer" id="article-footer">
-	
-	<div class="section__wrap article-footer__wrap">
+@@if (role === "boys"){
 
-		<div class="article-footer__image-placeholder article-footer__image-placeholder--start">
-			
-			<img src="assets/images/pers/article-girl.png" alt="" class="article-footer__image">
+@@include('../common/article-footer.html', {
+	"role": "boys"
+})
 
-		</div><!-- /.competition__image-placeholder -->
+}
 
-		<div class="article-footer__image-placeholder article-footer__image-placeholder--end">
-			
-			<img src="assets/images/pers/article-boy.png" alt="" class="article-footer__image">
+@@if (role === "girls"){
 
-		</div><!-- /.competition__image-placeholder -->
+@@include('../common/article-footer.html', {
+	"role": "girls"
+})
 
-		<div class="article-footer__button-placeholder">
-			
-			<a href="@@home" class="article-footer__button button button--yellow button--m">НАЗАД</a>
-
-		</div><!-- /.about__button-placeholder -->
-	
-	</div> <!-- /.article-footer__wrap -->
-
-</section> <!-- /.article-footer -->
+}
 
 

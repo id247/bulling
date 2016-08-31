@@ -71,21 +71,16 @@
 			
 			</ul> <!-- /.about-codex__list -->
 
-			<div class="about-codex__download">
-				
-				<div class="about-codex__button-placeholder">
-					
-					<a href="#" download class="about-codex__button button button--yellow button--m button--block">скачать</a>
-
-				</div><!-- /.about-codex__button-placeholder -->
-				
-				<div class="about-codex__button-placeholder">
-					
-					<a href="#" class="about-codex__button button button--yellow button--m button--block">распечатать</a>
-
-				</div><!-- /.about-codex__button-placeholder -->
-
-			</div><!-- /.about-codex__download -->
+			@@if (role === "girls"){
+				@@include('../common/codex-download.html', {
+					"role": "girls"
+				})
+			}
+			@@if (role === "boys"){
+				@@include('../common/codex-download.html', {
+					"role": "boys"
+				})
+			}
 
 		</div><!-- /.home__codex -->
 	

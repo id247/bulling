@@ -54,21 +54,9 @@
 			
 			</ul> <!-- /.about-codex__list -->
 
-			<div class="about-codex__download">
-				
-				<div class="about-codex__button-placeholder">
-					
-					<a href="#" download class="about-codex__button button button--yellow button--m button--block">скачать</a>
-
-				</div><!-- /.about-codex__button-placeholder -->
-				
-				<div class="about-codex__button-placeholder">
-					
-					<a href="#" class="about-codex__button button button--yellow button--m button--block">распечатать</a>
-
-				</div><!-- /.about-codex__button-placeholder -->
-
-			</div><!-- /.about-codex__download -->
+			@@include('../common/codex-download.html', {
+				"role": "adults"
+			})
 
 		</div><!-- /.home__codex -->
 	

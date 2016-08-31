@@ -1,0 +1,31 @@
+<div class="about-codex__download">
+	
+	<div class="about-codex__button-placeholder">
+		
+		@@if (role === "girls"){
+		<a href="assets/downloads/girls.pdf" download class="about-codex__button button button--yellow button--m button--block">скачать и распечатать</a>
+		}
+		@@if (role === "boys"){
+		<a href="assets/downloads/boys.pdf" download class="about-codex__button button button--yellow button--m button--block">скачать и распечатать</a>
+		}
+		@@if (role === "adults"){
+		<a href="assets/downloads/boys.pdf" download class="about-codex__button button button--yellow button--m button--block">скачать и распечатать</a>
+		}
+		
+	</div><!-- /.about-codex__button-placeholder -->
+	
+	<div class="about-codex__button-placeholder" style="display: none;">
+		
+		@@if (role === "girls"){
+		<a href="assets/downloads/girls.pdf" class="about-codex__button button button--yellow button--m button--block">распечатать</a>
+		}
+		@@if (role === "boys"){
+		<a href="assets/downloads/boys.pdf" class="about-codex__button button button--yellow button--m button--block">распечатать</a>
+		}
+		@@if (role === "adults"){
+		<a href="assets/downloads/boys.pdf" class="about-codex__button button button--yellow button--m button--block">распечатать</a>
+		}
+
+	</div><!-- /.about-codex__button-placeholder -->
+
+</div><!-- /.about-codex__download -->

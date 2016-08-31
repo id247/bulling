@@ -16,7 +16,13 @@
 
 			<div class="about-bulling__button-placeholder">
 				
-				<a href="#" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				@@if (role === "boys"){
+				<a href="bulling-articles-boys.html#article-1" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				}
+				
+				@@if (role === "girls"){
+				<a href="bulling-articles-girls.html#article-1" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				}
 
 			</div><!-- /.about-bulling__button-placeholder -->
 
