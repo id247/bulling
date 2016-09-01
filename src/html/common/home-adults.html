@@ -39,7 +39,13 @@
 
 			<div class="about-bulling__button-placeholder">
 				
-				<a href="#" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				@@if (role === "teachers"){
+				<a href="bulling-articles-teachers#article-1" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				}
+				
+				@@if (role === "parents"){
+				<a href="bulling-articles-parents#article-1" class="about-bulling__button button button--yellow button--m">ЧИТАТЬ ПОДРОБНЕЕ</a>
+				}
 
 			</div><!-- /.about-bulling__button-placeholder -->
 
