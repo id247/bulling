@@ -8,7 +8,7 @@ var appSettings = path.join(__dirname, 'src/js/settings/settings-staging.js');
 module.exports = {
 	cache: true,
 	entry: {
-		staging: ['babel-polyfill', './src/js/index'],
+		staging: ['whatwg-fetch', 'babel-polyfill', './src/js/index'],
 	},
 	output: {
 		path: __dirname + '/production/assets/js',

@@ -348,6 +348,7 @@
 		width: 470px;
 		margin: auto;
 		position: relative;
+		text-align: center;
 
 		&:before{
 			content: '';
@@ -356,6 +357,11 @@
 			bottom: 0;
 			left: 100%; 
 		}
+	}
+
+	&__message{
+		text-align: center;
+		padding: 20px 0 0;
 	}
 }
 
