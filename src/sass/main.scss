@@ -109,6 +109,7 @@
 	}
 
 	&__logos{
+		position: relative;
 		text-align: center;
 		margin: 0 0 120px;
 	}
@@ -122,6 +123,14 @@
 .home-logos{
 	display: inline-block;
 	@include sprite($logos);
+	position: relative;
+	&__link{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100px;
+	}
 }
 
 
@@ -627,6 +636,10 @@
 	font-size: 16px;
 	font-weight: 400;
 	z-index: 600;
+
+	@media (max-width: 1100px){
+		display: none;
+	}
 
 	&:before{
 		content: '';

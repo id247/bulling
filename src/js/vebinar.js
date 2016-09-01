@@ -70,7 +70,7 @@ export default (function App(window, document, $){
 		asyncStart();
 
 		$.ajax({
-			url: 'https://formspree.io/bazhenov@company.dnevnik.ru', 
+			url: 'https://formspree.io/shinkarenko@company.dnevnik.ru', 
 		    method: 'POST',
 		    data: data,
 		    dataType: 'json',
@@ -130,6 +130,11 @@ export default (function App(window, document, $){
 	}
 
 	function init(){
+
+		if (location.href.indexOf('bulling-parents') === -1
+			&& location.href.indexOf('bulling-teachers') === -1){
+			return false;
+		}
 
 		if (!Cookies.get(cookieName)){
 			getUser();

@@ -1,7 +1,7 @@
 export const OAuthOptions = {
 	authUrl: 'https://login.school.mosreg.ru/oauth2',
 	grantUrl: 'https://api.school.mosreg.ru/v1/authorizations',
-	scope: 'Roles,Schools,EduGroups,Relatives,Wall,Messages',		
+	scope: 'FullName,Roles,Messages,Age,EmailAddress',		
 	clientId: 'e96187670b2a43fca88d811ea9771993',
 	redirectUrl: 'https://ad.school.mosreg.ru/promo/oauth2',
 }

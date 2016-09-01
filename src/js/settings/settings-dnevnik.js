@@ -1,8 +1,8 @@
 export const OAuthOptions = {
 	authUrl: 'https://login.dnevnik.ru/oauth2',
 	grantUrl: 'https://api.dnevnik.ru/v1/authorizations',
-	scope: 'Roles,Schools,EduGroups,Relatives,Wall,Messages',	
-	clientId: '14a4c99acdf74879881d1960367d9993',
+	scope: 'FullName,Roles,Messages,Age,EmailAddress',	
+	clientId: '4cd7a9ce10e241119607de3bc06d084d',
 	redirectUrl: 'https://ad.dnevnik.ru/promo/oauth2',
 }
 
