@@ -1,0 +1,32 @@
+<section class="container__section section vebinar" id="vebinar">
+	
+	<div class="section__wrap vebinar__wrap">
+
+		<h2 class="section__title vebinar__title">
+			@@if (role === "parents"){
+				Вебинар для родителей
+			}
+			@@if (role === "teachers"){
+				Вебинар для учителей
+			}
+		</h2>
+
+		<div class="vebinar__button-placeholder">
+			
+			<button class="vebinar__button button button--yellow button--m button--block js-vebinar-registration">ЗАПИСАТЬСЯ НА ВЕБИНАР</button>
+
+			<div class="vebinar__message js-vebinar-registration-message">
+				
+			</div>
+
+		</div><!-- /.vebinar__button-placeholder -->
+	
+		<div class="section__text vebinar__text text">
+			<p>
+				Вебинар проводит Галина Владимировна Солдатова — профессор факультета психологии МГУ им. М.В. Ломоносова и директор «Фонда Развития Интернет».
+			</p>
+		</div><!-- /.vebinar__text -->
+	
+	</div> <!-- /.vebinar__wrap -->
+
+</section> <!-- /.vebinar -->

@@ -318,7 +318,7 @@
 
 .articles-links{
 
-	padding: 50px 0 100px;
+	padding: 50px 0 50px;
 
 	&__title{
 		margin: 0 0 50px;
@@ -345,32 +345,6 @@
 	&__all{
 		font-weight: 400;
 		font-size: 18px;
-	}
-
-	&__text{
-		margin: 0 0 50px;
-		padding: 0 50px;
-		text-align: center;
-	}
-
-	&__button-placeholder{
-		width: 470px;
-		margin: auto;
-		position: relative;
-		text-align: center;
-
-		&:before{
-			content: '';
-			@include sprite($snail);
-			position: absolute;
-			bottom: 0;
-			left: 100%; 
-		}
-	}
-
-	&__message{
-		text-align: center;
-		padding: 20px 0 0;
 	}
 }
 
@@ -413,6 +387,44 @@
 		border-bottom: 2px solid #bfbfbf; 
 		transition: all .2s;
 		font-weight: 400;
+	}
+}
+
+/* ==========================================================================
+ * vebinar
+ * ========================================================================== */
+
+.vebinar{
+	padding: 20px 0 50px;
+
+	&__title{
+		margin: 0 0 60px;
+	}
+
+	&__text{
+		margin: 0 0 50px;
+		padding: 0 50px;
+		text-align: center;
+	}
+
+	&__button-placeholder{
+		width: 470px;
+		position: relative;
+		text-align: center;
+		margin: 0 auto 50px;
+
+		&:before{
+			content: '';
+			@include sprite($snail);
+			position: absolute;
+			bottom: 20px;
+			left: 100%; 
+		}
+	}
+
+	&__message{
+		text-align: center;
+		padding: 20px 0 0;
 	}
 }
 
@@ -564,6 +576,11 @@
 	&__wrap{
 		width: 800px;
 	}	
+
+	&__text{
+		font-size: 16px;
+		font-weight: 400;
+	}
 }
 
 /* ==========================================================================

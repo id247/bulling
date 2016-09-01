@@ -21,6 +21,7 @@ module.exports = {
 		modulesDirectories: ['node_modules'],
 		extentions: ['', '.js'],
 		alias: {
+			appSettings: appSettings,
 		}
 	},
 
