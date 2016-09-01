@@ -43,18 +43,9 @@ span{
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=); 
 }
 
-
-strong{
-	font-weight: 700;
-}
-
 sup{
 	font-size: .8em;
 	vertical-align: super;
-}
-
-.italic{
-	font-style: italic;
 }
 
 .text{
@@ -74,6 +65,15 @@ sup{
 		&:last-child{
 			margin: 0;
 		}
+	}
+
+
+	strong{
+		font-weight: 700;
+	}
+
+	em{
+		font-style: italic;
 	}
 
 }

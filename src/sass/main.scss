@@ -76,14 +76,14 @@
 		}
 
 		&:before{
-			bottom: -50px;
-			margin: 0 0 0 -800px;
+			bottom: -100px;
+			margin: 0 0 0 -600px;
 			content: url(../images/pers/about-cat.png);
 		}
 
 		&:after{
-			bottom: -150px;
-			margin: 0 0 0 500px;
+			bottom: -100px;
+			margin: 0 0 0 200px;
 			content: url(../images/pers/about-jake.png);
 		}
 	}
@@ -542,13 +542,27 @@
 }
 
 /* ==========================================================================
+ * article
+ * ========================================================================== */
+
+.article{
+	&__wrap{
+		width: 800px;
+	}	
+}
+
+/* ==========================================================================
  * articles-headings
  * ========================================================================== */
 
 .articles-headings{
 
+	&__wrap{
+		width: 800px;
+	}
+
 	&__list{
-		
+		width: 700px;
 	}
 
 	&__item{
@@ -576,12 +590,12 @@
 		left: 50%;
 		
 		&--start{
-			margin: 0 0 0 -800px;
+			margin: 0 0 0 -600px;
 			bottom: 0px;
 		}
 
 		&--end{
-			margin: 0 0 0 550px;
+			margin: 0 0 0 400px;
 			bottom: 80px;
 		}
 	}
