@@ -166,7 +166,9 @@ gulp.task('vers', function(){
 
 				if (href.indexOf('//') === -1){
 					node.attrs['href'] =  href.replace('.html', '');
-				}else if (href.indexOf('assets/') === 0){
+				}
+
+				if (href.indexOf('assets/') === 0){
 					node.attrs['href'] =  href.replace('assets/', CDN);
 				}				
 
