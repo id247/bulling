@@ -311,6 +311,49 @@
 	}
 }
 
+/* ==========================================================================
+ * select-age
+ * ========================================================================== */
+
+
+.select-age{
+	position: relative;
+	cursor: pointer;
+
+	&__input{
+		position: absolute;
+		left: -9999px;
+
+		&:checked + .select-age__content{
+			display: block;
+		}
+	}
+
+	&__content{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		padding: 20px;
+		//border: 1px solid;
+		box-shadow: 0 0 10px rgba(0,0,0,.5);
+		border-radius: 10px;
+
+		display: none;
+	}
+
+	&__title{
+		margin: 0 0 15px;
+		display: block;
+	}
+
+	&__item{
+		display: block;
+		margin: 0 0 5px;
+	}
+}
+
 
 /* ==========================================================================
  * articles-links
